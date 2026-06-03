@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>0Manual — infraestructura inmobiliaria</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ════════ AMBIENT — single static glow layer behind everything ════════ -->
+<div class="ambient-bg" aria-hidden="true">
+  <span class="amb amb-gold"></span>
+  <span class="amb amb-navy"></span>
+  <span class="amb amb-gold-2"></span>
+</div>
+
+<!-- ════════ NAV ════════ -->
+<nav class="nav liquid-glass" id="nav" data-screen-label="00 Nav">
+  <a href="#" class="nav-logo" aria-label="0Manual">0M</a>
+  <div class="nav-links">
+    <a href="#sistema" class="nav-link">sistema</a>
+    <a href="#resultados" class="nav-link">resultados</a>
+    <a href="#contacto" class="nav-link">contacto</a>
+  </div>
+  <a href="#contacto" class="nav-cta">agenda <span class="arrow">↗</span></a>
+</nav>
+
+<!-- ════════ HERO · static premium first screen ════════ -->
+<section class="hero" id="hero" data-screen-label="01 Hero">
+  <div class="hero-bg" aria-hidden="true">
+    <div class="hero-base"></div>
+    <div class="hero-warmth">
+      <div class="hero-layer hero-haze" data-depth="7"></div>
+      <div class="hero-layer hero-glow-copper" data-depth="11"></div>
+      <div class="hero-layer hero-glow-blue" data-depth="6"></div>
+      <div class="hero-layer hero-veins" data-depth="4"></div>
+      <div class="hero-layer hero-glow-gold" data-depth="16"></div>
+    </div>
+    <div class="hero-grain"></div>
+    <div class="hero-darken"></div>
+    <div class="hero-fade-bottom"></div>
+  </div>
+  <div class="hero-content">
+    <span class="hero-eyebrow">infraestructura inmobiliaria</span>
+    <h1 class="hero-title"><span class="hero-title-0">0</span><span class="hero-title-m">Manual</span></h1>
+    <p class="hero-sub">
+      <span class="hero-sub-rule"></span>
+      <span class="hero-sub-text">captación · cualificación · entrega</span>
+      <span class="hero-sub-rule"></span>
+    </p>
+  </div>
+  <a class="hero-scroll" href="#intro" aria-label="bajar">
+    <span class="hero-scroll-label">scroll</span>
+    <span class="hero-scroll-line"><span class="hero-scroll-dot"></span></span>
+  </a>
+</section>
+
+<!-- ════════ INTRO · qué hacemos ════════ -->
+<section class="intro" id="intro" data-screen-label="02 Intro">
+  <div class="intro-inner">
+    <span class="eyebrow intro-eyebrow"><span class="dot"></span>qué hacemos</span>
+    <h2 class="intro-h">
+      una capa <em>silenciosa</em> entre tu agencia y cada lead.
+    </h2>
+    <p class="intro-sub">
+      no es un crm más. no es un chatbot. es la infraestructura que coordina los sistemas
+      que ya usas — portales, whatsapp business, tu crm — para que ningún propietario
+      se caiga entre la captación y el cierre.
+    </p>
+    <div class="intro-rule"></div>
+  </div>
+</section>
+
+<!-- ════════ EDGE · the 1% that moves first (autoplay video) ════════ -->
+<section class="edge" data-screen-label="02b Ventaja">
+  <div class="edge-inner">
+
+    <div class="edge-media">
+      <div class="edge-video-frame">
+        <video class="edge-video"
+               id="edge-video"
+               src="assets/edge.mp4"
+               muted loop playsinline preload="auto"
+               aria-hidden="true"></video>
+      </div>
+    </div>
+
+    <div class="edge-text">
+      <span class="eyebrow edge-eyebrow">el 1% que se adelanta</span>
+      <h2 class="edge-h">
+        supera al <em>99%</em> de tu competencia.
+      </h2>
+
+      <div class="edge-body">
+        <p>
+          la mayoría de las inmobiliarias sigue trabajando de la misma forma que hace años.
+        </p>
+        <ul class="edge-list">
+          <li>utiliza los mismos métodos.</li>
+          <li>depende demasiado del trabajo manual.</li>
+          <li>y espera a que las oportunidades aparezcan.</li>
+        </ul>
+        <p>
+          las inmobiliarias que crecen no se limitan a hacer lo mismo un poco mejor.
+          construyen sistemas que les permiten <em class="edge-em">captar más oportunidades,
+          responder más rápido y avanzar</em> mientras los demás todavía dudan.
+        </p>
+        <p class="edge-kicker">
+          no esperes a que el mercado te obligue a cambiar. empieza antes que ellos.
+        </p>
+      </div>
+
+      <a href="#contacto" class="btn btn-solid edge-cta">dar el primer paso <span class="arrow">↗</span></a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ════════ CHAPTER 2 · floating chart + scrolling info ════════ -->
+<section class="ch2" id="sistema" data-screen-label="03 System" data-stage data-smooth data-video="chart">
+  <div class="ch2-pin">
+
+    <div class="ch2-left" style="height: 78px; width: 744px; gap: 2px; justify-content: space-between; align-items: center; padding: 151px 0px 86px 72px">
+      <div class="ch2-header" style="border-width: 0px; border-style: solid; margin: 0px 5px 0px 0px; border-color: rgb(0, 0, 0); width: 303px; height: 224px">
+        <span class="eyebrow ch2-eyebrow">cómo opera</span>
+        <h2 class="ch2-h" style="height: 94px; width: 553px">
+          el sistema entre <em>tu equipo</em> y cada propietario.
+        </h2>
+        <p class="ch2-lead">
+          no es magia ni un asistente. es un flujo conectado a tus portales,
+          tu whatsapp y tu crm, que actúa donde antes había silencio.
+        </p>
+      </div>
+
+      <div class="ch2-slot" style="padding: 28px 0px 0px; margin: 0px 0px 0px 220px; border-width: 1px 0px 0px; height: 5240px">
+        <div class="ch2-row" data-from="0" data-to="0.20">
+          <div class="ch2-num">01</div>
+          <div>
+            <div class="ch2-row-h">capta sin esperar.</div>
+            <p class="ch2-row-body">
+              cuando un propietario rellena un formulario en idealista, fotocasa o tu propia web,
+              el sistema engancha la conversación en los primeros segundos —
+              también de madrugada, también en domingo.
+            </p>
+          </div>
+        </div>
+
+        <div class="ch2-row" data-from="0.18" data-to="0.36">
+          <div class="ch2-num">02</div>
+          <div>
+            <div class="ch2-row-h">conversa con criterio.</div>
+            <p class="ch2-row-body">
+              pregunta lo que un comercial preguntaría: tipo de inmueble, plazo de venta,
+              motivo, precio orientativo. no improvisa — sigue el guion que tu equipo definiría.
+            </p>
+          </div>
+        </div>
+
+        <div class="ch2-row" data-from="0.34" data-to="0.52">
+          <div class="ch2-num">03</div>
+          <div>
+            <div class="ch2-row-h">cualifica e ignora.</div>
+            <p class="ch2-row-body">
+              asigna un score por intención y descarta lo curioso.
+              tu equipo no abre más conversaciones — abre las correctas.
+            </p>
+          </div>
+        </div>
+
+        <div class="ch2-row" data-from="0.50" data-to="0.68">
+          <div class="ch2-num">04</div>
+          <div>
+            <div class="ch2-row-h">programa el seguimiento.</div>
+            <p class="ch2-row-body">
+              si el propietario no responde, el sistema vuelve en 24h, 3 días, 1 semana.
+              cada mensaje con un ángulo distinto. nada se enfría por olvido.
+            </p>
+          </div>
+        </div>
+
+        <div class="ch2-row" data-from="0.66" data-to="0.84">
+          <div class="ch2-num">05</div>
+          <div>
+            <div class="ch2-row-h">entrega al comercial.</div>
+            <p class="ch2-row-body">
+              cuando el contacto está caliente, llega al crm con contexto, historial y siguiente paso.
+              tu equipo abre la ficha y sabe exactamente con qué llamar.
+            </p>
+          </div>
+        </div>
+
+        <div class="ch2-row" data-from="0.82" data-to="1.0">
+          <div class="ch2-num">06</div>
+          <div>
+            <div class="ch2-row-h">aprende del cierre.</div>
+            <p class="ch2-row-body">
+              cada visita perdida o cerrada vuelve al sistema.
+              los umbrales se reajustan. el guion se afina con lo que de verdad funciona en tu zona.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ch2-right" style="align-items: center; justify-content: center">
+      <div class="chart-window">
+        <div class="chart-window-tab">
+          <span class="cw-tab-dot"></span>
+          <span class="cw-tab-label">panel · pipeline en vivo</span>
+        </div>
+        <div class="chart-window-frame">
+          <video class="chart-video"
+                 id="chart-video"
+                 src="assets/chart.mp4"
+                 muted playsinline preload="auto"
+                 crossorigin="anonymous"
+                 aria-hidden="true"></video>
+          <canvas class="chart-canvas scroll-canvas" aria-hidden="true"></canvas>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ════════ CHAPTER 3 · counter video bg + centered scrolling text ════════ -->
+<section class="ch3" id="resultados" data-screen-label="04 Results" data-stage data-video="counter">
+  <div class="ch3-pin">
+    <video class="ch3-video"
+           id="counter-video"
+           src="assets/counter.mp4"
+           muted playsinline preload="auto"
+           crossorigin="anonymous"
+           aria-hidden="true"></video>
+    <canvas class="ch3-canvas scroll-canvas" aria-hidden="true"></canvas>
+    <div class="ch3-veil"></div>
+
+    <div class="ch3-content">
+      <div class="ch3-stack">
+
+        <div class="ch3-block" data-from="0" data-to="0.22">
+          <div class="ch3-eyebrow">el sistema no descansa.</div>
+          <h2 class="ch3-h">
+            mientras tu equipo <em>duerme,</em><br/>el pipeline sigue moviéndose.
+          </h2>
+        </div>
+
+        <div class="ch3-block" data-from="0.18" data-to="0.40">
+          <p class="ch3-line">
+            cada lead que entra a las <em>23:47</em> recibe respuesta antes de que se enfríe.
+          </p>
+        </div>
+
+        <div class="ch3-block" data-from="0.36" data-to="0.58">
+          <p class="ch3-line">
+            cada propietario que pidió información el sábado tiene una conversación abierta el domingo por la mañana.
+          </p>
+        </div>
+
+        <div class="ch3-block" data-from="0.54" data-to="0.76">
+          <p class="ch3-line">
+            cada seguimiento que tu equipo no llegó a hacer, <em>se hace.</em>
+          </p>
+        </div>
+
+        <div class="ch3-block" data-from="0.72" data-to="0.92">
+          <p class="ch3-line">
+            cuando llega el lunes, tu equipo abre el crm y el pipeline ya está caliente.
+          </p>
+        </div>
+
+        <div class="ch3-block ch3-block-final" data-from="0.88" data-to="1.0">
+          <h3 class="ch3-final-h">
+            el cierre es lo único humano.<br/><em>lo demás lo prepara el sistema.</em>
+          </h3>
+          <a href="#contacto" class="btn btn-glass ch3-cta">agenda tu diagnóstico <span class="arrow">↗</span></a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ CONTACT · form + calendar ════════ -->
+<section class="contact" id="contacto" data-screen-label="05 Contact">
+  <div class="contact-inner">
+    <span class="eyebrow contact-eyebrow"><span class="dot"></span>llamada de diagnóstico</span>
+    <h2 class="contact-h">
+      detecta dónde estás perdiendo <em>propietarios.</em>
+    </h2>
+    <p class="contact-sub">
+      agenda una llamada y revisamos cómo captas ahora, cuánto tardas en responder,
+      qué ocurre fuera de horario y qué parte de tu proceso puede automatizarse sin perder trato humano.
+    </p>
+
+    <form class="contact-form" id="contact-form" novalidate>
+      <div class="cf-field">
+        <label class="cf-label" for="cf-nombre">nombre completo</label>
+        <input class="cf-input" id="cf-nombre" name="nombre" type="text" placeholder="tu nombre completo" autocomplete="name" required />
+        <span class="cf-error" data-error-for="nombre"></span>
+      </div>
+
+      <div class="cf-row">
+        <div class="cf-field">
+          <label class="cf-label" for="cf-email">correo electrónico</label>
+          <input class="cf-input" id="cf-email" name="email" type="email" placeholder="tu@empresa.com" autocomplete="email" required />
+          <span class="cf-error" data-error-for="email"></span>
+        </div>
+        <div class="cf-field">
+          <label class="cf-label" for="cf-telefono">teléfono</label>
+          <input class="cf-input" id="cf-telefono" name="telefono" type="tel" placeholder="+34 600 000 000" autocomplete="tel" required />
+          <span class="cf-error" data-error-for="telefono"></span>
+        </div>
+      </div>
+
+      <div class="cf-field">
+        <label class="cf-label" for="cf-empresa">nombre de la inmobiliaria</label>
+        <input class="cf-input" id="cf-empresa" name="empresa" type="text" placeholder="nombre de tu inmobiliaria" autocomplete="organization" required />
+        <span class="cf-error" data-error-for="empresa"></span>
+      </div>
+
+      <div class="cf-field">
+        <label class="cf-label" for="cf-problema">¿qué problema quieres resolver?</label>
+        <textarea class="cf-textarea" id="cf-problema" name="problema" rows="4" placeholder="dónde sientes que estás perdiendo propietarios o tiempo" required></textarea>
+        <span class="cf-error" data-error-for="problema"></span>
+      </div>
+
+      <div class="cf-cal-block">
+        <div class="cf-cal-head">
+          <span class="cf-label">elige fecha y hora para la llamada <span style="text-transform: none; letter-spacing: 0; color: var(--subtle); font-weight: 300;">(opcional)</span></span>
+          <span class="cf-cal-tz" id="cf-cal-tz">europa/madrid · lun–vie 10–12 y 16–20</span>
+        </div>
+        <div class="cf-cal-wrap">
+          <div class="cf-cal">
+            <div class="cf-cal-nav">
+              <button type="button" class="cf-cal-btn" id="cf-cal-prev" aria-label="mes anterior"><svg viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg></button>
+              <span class="cf-cal-month" id="cf-cal-month">mes</span>
+              <button type="button" class="cf-cal-btn" id="cf-cal-next" aria-label="mes siguiente"><svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg></button>
+            </div>
+            <div class="cf-cal-weekrow"><span>l</span><span>m</span><span>x</span><span>j</span><span>v</span><span>s</span><span>d</span></div>
+            <div class="cf-cal-grid" id="cf-cal-grid"></div>
+          </div>
+          <div class="cf-slots" id="cf-slots-panel">
+            <div class="cf-slots-head">
+              <span class="cf-slots-day" id="cf-slots-day">selecciona un día</span>
+              <span class="cf-cal-status" id="cf-cal-status"></span>
+            </div>
+            <div id="cf-slots-body"><span class="cf-slots-empty">elige un día en el calendario para ver los huecos disponibles.</span></div>
+          </div>
+        </div>
+        <input type="hidden" name="fecha_hora" id="cf-fecha-hora" value="" />
+        <span class="cf-error" data-error-for="fecha_hora"></span>
+        <div class="cf-slot-selected-tag" id="cf-slot-tag" style="display: none;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          <span><em>hora seleccionada:</em> <span id="cf-slot-tag-text"></span></span>
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-solid cf-submit" id="cf-submit">
+        <span class="cf-submit-label">agendar diagnóstico</span>
+        <span class="arrow">↗</span>
+      </button>
+    </form>
+
+    <div class="cf-status" id="cf-status" aria-live="polite">
+      <span class="dot"></span>
+      <p class="msg" id="cf-status-msg"></p>
+      <p class="sub" id="cf-status-sub"></p>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ FOOTER ════════ -->
+<footer data-screen-label="06 Footer">
+  <div class="foot-grid">
+    <div class="foot-brand">
+      <a class="foot-logo" href="#"><img src="assets/logo-full.png" alt="0Manual"></a>
+      <p class="foot-tag">captación y cualificación de propietarios para inmobiliarias.</p>
+    </div>
+    <div class="foot-col">
+      <h6>web</h6>
+      <ul>
+        <li><a href="#sistema">sistema</a></li>
+        <li><a href="#resultados">resultados</a></li>
+        <li><a href="#contacto">contacto</a></li>
+      </ul>
+    </div>
+    <div class="foot-col">
+      <h6>contacto</h6>
+      <ul>
+        <li><a href="#contacto">agendar diagnóstico</a></li>
+        <li><a href="mailto:0manual.info@gmail.com?subject=me%20interesa%20tener%20una%20llamada">0manual.info@gmail.com</a></li>
+      </ul>
+    </div>
+    <div class="foot-col">
+      <h6>filosofía</h6>
+      <div class="foot-status"><span class="signal-dot"></span> <em>una zona. una inmobiliaria.</em></div>
+      <p style="font-size: 12px; color: var(--subtle); font-weight: 300; margin-top: 14px; line-height: 1.5;">
+        el cierre es lo único humano. lo demás lo prepara el sistema.
+      </p>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <span>© 2026 0Manual.</span>
+    <span>privacidad · términos · cookies</span>
+  </div>
+</footer>
+
+<!-- ════════ SCROLL ENGINE ════════ -->
+<script src="engine.js"></script>
+
+<script src="form.js"></script>
+
+</body>
+</html>
