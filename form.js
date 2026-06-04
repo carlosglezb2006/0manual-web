@@ -259,20 +259,25 @@
     statusMsg.textContent = 'gracias. te contactamos en menos de 48 horas para confirmar el diagnóstico.';
     statusSub.textContent = '';
 
-    const payload = JSON.stringify(data);
+    // Enviar SIN provocar un "preflight" de CORS: form-urlencoded es una
+    // petición "simple", así que el navegador la entrega a n8n directamente
+    // aunque n8n no tenga CORS configurado. (Un cuerpo JSON obliga a un
+    // preflight OPTIONS que n8n no contesta, y el POST se perdía en silencio.)
+    const body = new URLSearchParams(data).toString();
     let sent = false;
     try {
       if (navigator.sendBeacon) {
-        const blob = new Blob([payload], { type: 'application/json' });
+        const blob = new Blob([body], { type: 'application/x-www-form-urlencoded;charset=UTF-8' });
         sent = navigator.sendBeacon(URL_WEBHOOK, blob);
       }
     } catch (e) {}
     if (!sent) {
       fetch(URL_WEBHOOK, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: payload,
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8' },
+        body: body,
         keepalive: true,
+        mode: 'no-cors',
       }).catch(() => {});
     }
   });
