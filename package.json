@@ -1,0 +1,23 @@
+{
+  "name": "0manual-web",
+  "version": "1.0.0",
+  "description": "0Manual — infraestructura inmobiliaria para captar propietarios",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlosglezb2006/0manual-web.git"
+  },
+  "keywords": ["0manual", "inmobiliaria", "real-estate"],
+  "author": "0Manual",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carlosglezb2006/0manual-web/issues"
+  },
+  "homepage": "https://github.com/carlosglezb2006/0manual-web#readme",
+  "dependencies": {
+    "@vercel/speed-insights": "^2.0.0"
+  }
+}
